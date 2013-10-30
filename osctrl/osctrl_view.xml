@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="osctrl_tree_view">
+			<field name="name">osctrl.tree</field>
+			<field name="model">osctrl</field>
+			<field name="arch" type="xml">
+				<tree string="Order Service">
+					<field name="reference"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="osctrl_form_view">
+			<field name="name">osctrl.form</field>
+			<field name="model">osctrl</field>
+			<field name="arch" type="xml">
+				<form string="Order Service">
+					<field name="reference"/>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_osctrl_tree">
+			<field name="name">osctrl</field>
+			<field name="res_model">osctrl</field>
+		</record>
+		<menuitem name="Order Service" icon="terp-project" id="osctrl_menu"/>
+		<menuitem name="Control" parent="osctrl_menu" id="osctrl_sub_menu"/>
+		<menuitem name="Orders" parent="osctrl_sub_menu" id="osctrl_menu_mainform" action="action_osctrl_tree"/>
+	</data>
+</openerp>

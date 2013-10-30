@@ -1,3 +1,6 @@
 eclipse.preferences.version=1
 encoding//notebook/__init__.py=utf-8
 encoding//notebook/notebook.py=utf-8
+encoding//osctrl/__init__.py=utf-8
+encoding//osctrl/__openerp__.py=utf-8
+encoding//osctrl/osctrl.py=utf-8
